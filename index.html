@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Feliz cumpleaños, Mi Amor ❤️</title> 
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Corazones animados de fondo -->
+  <div class="floating-hearts" id="hearts"></div>
+
+  <!-- PORTADA -->
+  <header class="hero" id="inicio">
+    <div class="neon">ESTA HISTORIA TIENE...</div>
+
+    <div class="coffee-icon">☕</div>
+
+    <p class="eyebrow">UN CAPÍTULO MUY ESPECIAL</p>
+
+    <h1>
+      ¡Feliz cumpleaños,
+      <span id="nombre-portada">Mi Amor</span>!
+    </h1>
+
+    <p class="hero-text">
+      Si nuestra historia fuera una serie,
+      mi capítulo favorito siempre sería contigo.
+    </p>
+
+    <button class="button button-yellow" id="abrir-regalo">
+      🎁 Abrir mi regalo
+    </button>
+
+    <p class="small-note">Hecho con todo mi corazón ❤️</p>
+
+    <div class="scroll-hint">↓ Hay una sorpresa para ti ↓</div>
+  </header>
+
+  <main id="contenido" class="hidden">
+
+    <!-- MENSAJE DE BIENVENIDA -->
+    <section class="section intro">
+      <span class="sticker">♡ YOU and ME ♡</span>
+
+      <h2>Hoy la protagonista eres tú</h2>
+
+      <p>
+        Hoy no es un día cualquiera. Hoy celebro el hecho de
+        que existes y que eres mi persona favorita.
+        Preparé este pequeño rincón para recordarte lo
+        especial que eres y lo que significas para mí.
+      </p>
+
+      <div class="reproductor">
+    <h2>🎵♡ Para la mejor de todas, porque sos mi mejor elección en mi vida ♡🎵</h2>
+
+    <audio id="musica" controls loop>
+        <source src="musica/cancion.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir este audio.
+    </audio>
+</div>
+
+      <p class="signature">Con todo mi amor, tu persona favorita 💌</p>
+    </section>
+
+    <!-- ÁLBUM DE FOTOS -->
+    <section class="section album-section">
+      <p class="eyebrow">NUESTROS RECUERDOS</p>
+      <h2>Mi álbum favorito 📸</h2>
+
+      <p class="section-description">
+        Algunas de mis fotos favoritas tienen algo en común: 
+        Que tú estás en ellas.
+      </p>
+
+      <div class="photo-grid">
+
+        <article class="polaroid tilt-left">
+          <img src="fotos/foto1.jpg"
+               alt="Nuestro recuerdo favorito"
+               loading="lazy">
+          <p class="photo-caption">Un día para recordar ❤️</p>
+          <span class="tape"></span>
+        </article>
+
+        <article class="polaroid tilt-right">
+          <img src="fotos/foto2.jpg"
+               alt="Un momento juntos"
+               loading="lazy">
+          <p class="photo-caption">Mi sonrisa favorita ❤️</p>
+          <span class="tape"></span>
+        </article>
+
+        <article class="polaroid tilt-right">
+          <img src="fotos/foto3.jpg"
+               alt="Una aventura juntos"
+               loading="lazy">
+          <p class="photo-caption">Contigo todo es mejor ❤️</p>
+          <span class="tape"></span>
+        </article>
+
+        <article class="polaroid tilt-left">
+          <img src="fotos/foto4.jpg"
+               alt="Un recuerdo especial"
+               loading="lazy">
+          <p class="photo-caption">Por nuestro primer viaje y los que nos faltan ✨</p>
+          <span class="tape"></span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- RAZONES PARA AMARLA -->
+    <section class="section reasons">
+      <p class="eyebrow">THE ONE I LOVE</p>
+      <h2>Razones por las que eres especial 💜</h2>
+
+      <div class="reason-list">
+        <div class="reason">💗 Tu manera de hacerme sonreír.</div>
+        <div class="reason">🌷 La manera en que siempre estás presente.</div>
+        <div class="reason">✨ Cada pequeño detalle que te hace única.</div>
+        <div class="reason">🫶 La suerte que siento de compartir mi vida contigo.</div>
+      </div>
+
+      <p class="little-note">
+        Y podría escribir mil razones más...
+      </p>
+    </section>
+
+    <!-- CARTA INTERACTIVA -->
+    <section class="section letter-section">
+      <div class="envelope">💌</div>
+
+      <p class="eyebrow">UN MENSAJE SOLO PARA TI</p>
+      <h2>Hay algo que quiero decirte...</h2>
+
+      <p>
+        Preparé unas palabras que ya sabes, pero que quiero recordarte. 
+      </p>
+
+      <button class="button button-purple" id="abrir-carta">
+        Abrir mi carta 💌
+      </button>
+
+      <div class="letter hidden" id="carta">
+        <h3>Para mi persona favorita ❤️</h3>
+        <p id="texto-carta"></p>
+        <p class="signature">Te amo muchísimo. 💋</p>
+      </div>
+    </section>
+
+    <!-- SORPRESA FINAL -->
+    <section class="section final-section">
+      <div class="big-heart">❤️</div>
+
+      <p class="eyebrow">TO BE CONTINUED...</p>
+      <h2>Lo mejor de nuestra historia aún está por escribirse</h2>
+
+      <p>
+        Quiero seguir coleccionando momentos, risas, abrazos
+        y aventuras contigo. Que este nuevo año de tu vida
+        te regale tanta felicidad como la que tú me das.
+      </p>
+
+      <button class="button button-yellow" id="sorpresa">
+        Tengo una última sorpresa ✨
+      </button>
+
+      <div id="mensaje-final" class="hidden final-message">
+        <h2>¡Te amo, feliz cumpleaños! 🎂</h2>
+        <p>
+          Si pudiera elegir otra vez, volvería a elegirte a ti.
+          Hoy, mañana y en todos los capítulos que nos falten. ❤️
+        </p>
+        <div id="confeti" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Hecho especialmente para ti ♡</p>
+      <p>FIN DEL CAPÍTULO... ¿O SOLO EL PRINCIPIO?</p>
+    </footer>
+
+  </main>
+</body>
+</html>
